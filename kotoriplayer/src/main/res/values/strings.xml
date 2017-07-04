@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KotoriPlayer</string>
+
+    <string name="retry_btn_immediate">立即重试</string>
+    <string name="retry_btn_again">再次尝试</string>
+    <string name="retry_delay_time">播放视频出现问题，%s秒后重试。</string>
+    <string name="retry_immediate_time">播放视频出现问题，正在重试。</string>
+    <string name="retry_toomuch_time">该视频多次尝试播放失败，请确定视频地址是否正确！</string>
+</resources>

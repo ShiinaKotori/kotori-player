@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <tv.danmaku.ijk.media.player.widget.IjkVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.elege.kotoriplayer.widget.SlideControlView
+        android:id="@+id/slide_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/player_progressbar"
+        style="@style/playerProgressbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1px"
+        android:max="1000"
+        android:progress="100"
+        android:secondaryProgress="500" />
+
+    <ImageView
+        android:id="@+id/pause_state_view"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play" />
+
+    <LinearLayout
+        android:id="@+id/error_msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retry_delay_time"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/retry_btn"
+            android:layout_width="70dip"
+            android:layout_height="24dip"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/btn_bg"
+            android:text="立即重试"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/player_controler_btn"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="8dip"
+        android:background="@drawable/player_controll_btn_bg" />
+
+    <TextView
+        android:id="@+id/player_current_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dip"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <SeekBar
+        android:id="@+id/player_seekbar"
+        style="@style/playerSeekbarStyle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="1000"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/player_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="14dip"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/player_fullscreen_btn"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/player_fullscreen_drawable" />
+
+</LinearLayout>
